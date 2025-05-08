@@ -1,0 +1,5 @@
+[gd_scene format=2]
+
+[node name="DanGraf" type="Label"]
+margin_right = 202.0
+margin_bottom = 14.0

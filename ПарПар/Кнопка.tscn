@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://timesnewromanpsmt.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Элементы оформления/Кнопка.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 1 )
+
+[node name="Button" type="Button"]
+margin_left = 2.0
+margin_top = 3.0
+margin_right = 82.0
+margin_bottom = 43.0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="Текстура" type="Sprite" parent="."]
+position = Vector2( 40, 20 )
+texture = ExtResource( 2 )
+
+[node name="Текст" type="Label" parent="."]
+margin_left = 5.0
+margin_top = 5.0
+margin_right = 75.0
+margin_bottom = 34.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Кнопка"
+align = 1
+valign = 1

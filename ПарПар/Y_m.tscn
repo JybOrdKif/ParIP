@@ -1,0 +1,4 @@
+[gd_scene format=2]
+
+[node name="YM" type="Label"]
+text = "1"

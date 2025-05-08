@@ -1,0 +1,414 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Элементы оформления/Фон.png" type="Texture" id=1]
+[ext_resource path="res://Элементы оформления/Экран.png" type="Texture" id=2]
+[ext_resource path="res://timesnewromanpsmt.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Кнопка.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Калькулятор формул.gd" type="Script" id=5]
+[ext_resource path="res://Элементы оформления/Широкая кнопка.png" type="Texture" id=6]
+[ext_resource path="res://Элементы оформления/Фон окошка ввода.png" type="Texture" id=7]
+[ext_resource path="res://Элементы оформления/Фон анкеты параметров.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=1]
+size = 30
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 20
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 20
+font_data = ExtResource( 3 )
+
+[node name="Калькулятор формул" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="Фон" type="Sprite" parent="."]
+position = Vector2( 512, 300 )
+texture = ExtResource( 1 )
+
+[node name="Экран" type="Sprite" parent="."]
+position = Vector2( 512, 120 )
+texture = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Экран"]
+margin_left = -157.0
+margin_top = -58.0
+margin_right = 157.0
+margin_bottom = 61.0
+custom_fonts/normal_font = SubResource( 1 )
+tab_size = 6
+text = "ПарПар"
+
+[node name="Кнопки" type="Node2D" parent="."]
+
+[node name="Button1" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 337.0
+margin_top = 250.0
+margin_right = 417.0
+margin_bottom = 290.0
+
+[node name="Button2" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 427.0
+margin_top = 250.0
+margin_right = 507.0
+margin_bottom = 290.0
+
+[node name="Button3" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 517.0
+margin_top = 250.0
+margin_right = 597.0
+margin_bottom = 290.0
+
+[node name="Button4" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 607.0
+margin_top = 250.0
+margin_right = 687.0
+margin_bottom = 290.0
+
+[node name="Button5" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 337.0
+margin_top = 300.0
+margin_right = 417.0
+margin_bottom = 340.0
+
+[node name="Button6" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 427.0
+margin_top = 300.0
+margin_right = 507.0
+margin_bottom = 340.0
+
+[node name="Button7" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 517.0
+margin_top = 300.0
+margin_right = 597.0
+margin_bottom = 340.0
+
+[node name="Button8" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 607.0
+margin_top = 300.0
+margin_right = 687.0
+margin_bottom = 340.0
+
+[node name="Button9" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 337.0
+margin_top = 350.0
+margin_right = 417.0
+margin_bottom = 390.0
+
+[node name="Button10" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 427.0
+margin_top = 350.0
+margin_right = 507.0
+margin_bottom = 390.0
+
+[node name="Button11" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 517.0
+margin_top = 350.0
+margin_right = 597.0
+margin_bottom = 390.0
+
+[node name="Button12" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 607.0
+margin_top = 350.0
+margin_right = 687.0
+margin_bottom = 390.0
+
+[node name="Button13" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 337.0
+margin_top = 400.0
+margin_right = 417.0
+margin_bottom = 440.0
+
+[node name="Button14" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 427.0
+margin_top = 400.0
+margin_right = 507.0
+margin_bottom = 440.0
+
+[node name="Button15" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 517.0
+margin_top = 400.0
+margin_right = 597.0
+margin_bottom = 440.0
+
+[node name="Button16" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 607.0
+margin_top = 400.0
+margin_right = 687.0
+margin_bottom = 440.0
+
+[node name="Button17" parent="Кнопки" instance=ExtResource( 4 )]
+visible = false
+margin_left = 337.0
+margin_top = 450.0
+margin_right = 417.0
+margin_bottom = 490.0
+
+[node name="Button18" parent="Кнопки" instance=ExtResource( 4 )]
+visible = false
+margin_left = 427.0
+margin_top = 450.0
+margin_right = 507.0
+margin_bottom = 490.0
+
+[node name="Button19" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 337.0
+margin_top = 500.0
+margin_right = 417.0
+margin_bottom = 540.0
+
+[node name="Button20" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 607.0
+margin_top = 500.0
+margin_right = 687.0
+margin_bottom = 540.0
+
+[node name="Button21" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 337.0
+margin_top = 450.0
+margin_right = 417.0
+margin_bottom = 490.0
+
+[node name="Кнопка22" type="Node2D" parent="Кнопки"]
+position = Vector2( 512, 470 )
+
+[node name="Текстура" type="Sprite" parent="Кнопки/Кнопка22"]
+texture = ExtResource( 6 )
+
+[node name="Button22" type="Button" parent="Кнопки/Кнопка22"]
+margin_left = -79.0
+margin_top = -16.0
+margin_right = 79.0
+margin_bottom = 16.0
+mouse_default_cursor_shape = 2
+flat = true
+
+[node name="Текст" type="Label" parent="Кнопки/Кнопка22"]
+margin_left = -81.0
+margin_top = -15.0
+margin_right = 80.0
+margin_bottom = 15.0
+custom_fonts/font = SubResource( 2 )
+text = "Кнопка"
+align = 1
+valign = 1
+
+[node name="Button23" parent="Кнопки" instance=ExtResource( 4 )]
+margin_left = 607.0
+margin_top = 450.0
+margin_right = 687.0
+margin_bottom = 490.0
+
+[node name="Окошко ввода" type="Node2D" parent="."]
+visible = false
+position = Vector2( 512, 380 )
+
+[node name="Фон" type="Sprite" parent="Окошко ввода"]
+texture = ExtResource( 7 )
+
+[node name="Yes" parent="Окошко ввода" instance=ExtResource( 4 )]
+margin_left = -90.0
+margin_top = 43.0
+margin_right = -10.0
+margin_bottom = 83.0
+
+[node name="No" parent="Окошко ввода" instance=ExtResource( 4 )]
+margin_left = 10.0
+margin_top = 43.0
+margin_right = 90.0
+margin_bottom = 83.0
+
+[node name="Вопрос" type="Label" parent="Окошко ввода"]
+margin_left = -120.0
+margin_top = -85.0
+margin_right = 120.0
+margin_bottom = -35.0
+custom_fonts/font = SubResource( 4 )
+text = "Введите что-то, которое
+хотите добавить в формулу"
+align = 1
+valign = 1
+
+[node name="Место для чисел" type="TextEdit" parent="Окошко ввода"]
+margin_left = -120.0
+margin_top = -30.0
+margin_right = 120.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 3 )
+
+[node name="Окошка выбора" type="Node2D" parent="."]
+visible = false
+position = Vector2( 512, 380 )
+
+[node name="Фон" type="Sprite" parent="Окошка выбора"]
+texture = ExtResource( 7 )
+
+[node name="Pust" parent="Окошка выбора" instance=ExtResource( 4 )]
+margin_left = -90.0
+margin_top = 43.0
+margin_right = -10.0
+margin_bottom = 83.0
+
+[node name="Pred" parent="Окошка выбора" instance=ExtResource( 4 )]
+margin_left = 10.0
+margin_top = 43.0
+margin_right = 90.0
+margin_bottom = 83.0
+
+[node name="Вопрос" type="RichTextLabel" parent="Окошка выбора"]
+margin_left = -120.0
+margin_top = -85.0
+margin_right = 120.0
+margin_bottom = -35.0
+custom_fonts/normal_font = SubResource( 6 )
+text = "Введите что-то, которое
+хотите добавить в формулу"
+
+[node name="Варианты ппараметров" type="ItemList" parent="Окошка выбора"]
+margin_left = -120.0
+margin_top = -30.0
+margin_right = 120.0
+margin_bottom = 30.0
+custom_colors/font_color = Color( 0.996078, 0.996078, 0.996078, 1 )
+custom_fonts/font = SubResource( 5 )
+
+[node name="Анкета параметра" type="Node2D" parent="."]
+visible = false
+position = Vector2( 512, 390 )
+
+[node name="Фон" type="Sprite" parent="Анкета параметра"]
+texture = ExtResource( 8 )
+
+[node name="Got" parent="Анкета параметра" instance=ExtResource( 4 )]
+margin_left = -90.0
+margin_top = 110.0
+margin_right = -10.0
+margin_bottom = 150.0
+
+[node name="Otm" parent="Анкета параметра" instance=ExtResource( 4 )]
+margin_left = 10.0
+margin_top = 110.0
+margin_right = 90.0
+margin_bottom = 150.0
+
+[node name="Вопрос" type="Label" parent="Анкета параметра"]
+margin_left = -145.0
+margin_top = -155.0
+margin_right = 145.0
+margin_bottom = -95.0
+custom_fonts/font = SubResource( 4 )
+text = "Введите что-то, которое
+хотите добавить в формулу"
+align = 1
+valign = 1
+
+[node name="Подписи" type="Node2D" parent="Анкета параметра"]
+
+[node name="Имя" type="Label" parent="Анкета параметра/Подписи"]
+margin_left = -153.0
+margin_top = -75.0
+margin_right = -43.0
+margin_bottom = -25.0
+custom_fonts/font = SubResource( 7 )
+text = "Имя
+переменной"
+align = 1
+valign = 1
+
+[node name="Максимум" type="Label" parent="Анкета параметра/Подписи"]
+margin_left = -153.0
+margin_top = 40.0
+margin_right = -43.0
+margin_bottom = 70.0
+custom_fonts/font = SubResource( 7 )
+text = "Максимум"
+align = 1
+valign = 1
+
+[node name="Минимум" type="Label" parent="Анкета параметра/Подписи"]
+margin_left = -153.0
+margin_top = -10.0
+margin_right = -43.0
+margin_bottom = 30.0
+custom_fonts/font = SubResource( 7 )
+text = "Минимум"
+align = 1
+valign = 1
+
+[node name="Первый символ имени" type="ItemList" parent="Анкета параметра"]
+margin_left = -40.0
+margin_top = -70.0
+margin_right = 40.0
+margin_bottom = -30.0
+custom_colors/font_color = Color( 0.996078, 0.996078, 0.996078, 1 )
+custom_fonts/font = SubResource( 5 )
+
+[node name="Второй символ имени" type="ItemList" parent="Анкета параметра"]
+margin_left = 50.0
+margin_top = -70.0
+margin_right = 130.0
+margin_bottom = -30.0
+custom_colors/font_color = Color( 0.996078, 0.996078, 0.996078, 1 )
+custom_fonts/font = SubResource( 5 )
+
+[node name="Минимум" type="TextEdit" parent="Анкета параметра"]
+margin_left = -40.0
+margin_top = -15.0
+margin_right = 130.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 3 )
+
+[node name="Максимум" type="TextEdit" parent="Анкета параметра"]
+margin_left = -40.0
+margin_top = 40.0
+margin_right = 130.0
+margin_bottom = 80.0
+custom_fonts/font = SubResource( 3 )
+
+[connection signal="pressed" from="Кнопки/Button1" to="." method="_on_Button1_pressed"]
+[connection signal="pressed" from="Кнопки/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="Кнопки/Button3" to="." method="_on_Button3_pressed"]
+[connection signal="pressed" from="Кнопки/Button4" to="." method="_on_Button4_pressed"]
+[connection signal="pressed" from="Кнопки/Button5" to="." method="_on_Button5_pressed"]
+[connection signal="pressed" from="Кнопки/Button6" to="." method="_on_Button6_pressed"]
+[connection signal="pressed" from="Кнопки/Button7" to="." method="_on_Button7_pressed"]
+[connection signal="pressed" from="Кнопки/Button8" to="." method="_on_Button8_pressed"]
+[connection signal="pressed" from="Кнопки/Button9" to="." method="_on_Button9_pressed"]
+[connection signal="pressed" from="Кнопки/Button10" to="." method="_on_Button10_pressed"]
+[connection signal="pressed" from="Кнопки/Button11" to="." method="_on_Button11_pressed"]
+[connection signal="pressed" from="Кнопки/Button12" to="." method="_on_Button12_pressed"]
+[connection signal="pressed" from="Кнопки/Button13" to="." method="_on_Button13_pressed"]
+[connection signal="pressed" from="Кнопки/Button14" to="." method="_on_Button14_pressed"]
+[connection signal="pressed" from="Кнопки/Button15" to="." method="_on_Button15_pressed"]
+[connection signal="pressed" from="Кнопки/Button16" to="." method="_on_Button16_pressed"]
+[connection signal="pressed" from="Кнопки/Button17" to="." method="_on_Button17_pressed"]
+[connection signal="pressed" from="Кнопки/Button18" to="." method="_on_Button18_pressed"]
+[connection signal="pressed" from="Кнопки/Button19" to="." method="_on_Button19_pressed"]
+[connection signal="pressed" from="Кнопки/Button20" to="." method="_on_Button20_pressed"]
+[connection signal="pressed" from="Кнопки/Button21" to="." method="_on_Button21_pressed"]
+[connection signal="pressed" from="Кнопки/Кнопка22/Button22" to="." method="_on_Button22_pressed"]
+[connection signal="pressed" from="Кнопки/Button23" to="." method="_on_Button23_pressed"]
+[connection signal="pressed" from="Окошко ввода/Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="Окошко ввода/No" to="." method="_on_No_pressed"]
+[connection signal="pressed" from="Окошка выбора/Pust" to="." method="_on_Pust_pressed"]
+[connection signal="pressed" from="Окошка выбора/Pred" to="." method="_on_Pred_pressed"]
+[connection signal="pressed" from="Анкета параметра/Got" to="." method="_on_Got_pressed"]
+[connection signal="pressed" from="Анкета параметра/Otm" to="." method="_on_Otm_pressed"]

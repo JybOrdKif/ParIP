@@ -1,0 +1,201 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Рисование графика.gd" type="Script" id=1]
+[ext_resource path="res://timesnewromanpsmt.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 2 )
+
+[node name="Рисование графика" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Y" type="SpinBox" parent="."]
+margin_left = 951.0
+margin_top = 30.0
+margin_right = 1025.0
+margin_bottom = 54.0
+max_value = 1e+07
+step = 0.001
+
+[node name="Подпись" type="Label" parent="Y"]
+margin_left = -284.0
+margin_top = 2.0
+margin_bottom = 26.0
+rect_pivot_offset = Vector2( 284, 24 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Коэффициент увеличения графика по Y:"
+
+[node name="+V" type="Label" parent="."]
+margin_left = 90.0
+margin_top = 90.0
+margin_right = 130.0
+margin_bottom = 115.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "+1"
+align = 1
+
+[node name="+V2" type="Label" parent="."]
+margin_left = 90.0
+margin_top = 140.0
+margin_right = 130.0
+margin_bottom = 165.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "+1"
+align = 1
+
+[node name="+V3" type="Label" parent="."]
+margin_left = 90.0
+margin_top = 190.0
+margin_right = 130.0
+margin_bottom = 215.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "+1"
+align = 1
+
+[node name="+V4" type="Label" parent="."]
+margin_left = 95.0
+margin_top = 240.0
+margin_right = 135.0
+margin_bottom = 265.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "+1"
+align = 1
+
+[node name="-V4" type="Label" parent="."]
+margin_left = 90.0
+margin_top = 340.0
+margin_right = 130.0
+margin_bottom = 365.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "-1"
+align = 1
+
+[node name="-V3" type="Label" parent="."]
+margin_left = 85.0
+margin_top = 390.0
+margin_right = 125.0
+margin_bottom = 415.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "-1"
+align = 1
+
+[node name="-V2" type="Label" parent="."]
+margin_left = 85.0
+margin_top = 440.0
+margin_right = 125.0
+margin_bottom = 465.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "-1"
+align = 1
+
+[node name="-V" type="Label" parent="."]
+margin_left = 85.0
+margin_top = 490.0
+margin_right = 125.0
+margin_bottom = 515.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "-1"
+align = 1
+
+[node name="Горизонтальные штрихи" type="Node2D" parent="."]
+
+[node name="G1" type="Label" parent="Горизонтальные штрихи"]
+margin_left = 220.0
+margin_top = 320.0
+margin_right = 320.0
+margin_bottom = 343.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "1"
+align = 1
+
+[node name="G2" type="Label" parent="Горизонтальные штрихи"]
+margin_left = 295.0
+margin_top = 260.0
+margin_right = 395.0
+margin_bottom = 283.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "2"
+align = 1
+
+[node name="G3" type="Label" parent="Горизонтальные штрихи"]
+margin_left = 370.0
+margin_top = 320.0
+margin_right = 470.0
+margin_bottom = 343.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "3"
+align = 1
+
+[node name="G4" type="Label" parent="Горизонтальные штрихи"]
+margin_left = 445.0
+margin_top = 260.0
+margin_right = 545.0
+margin_bottom = 283.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "4"
+align = 1
+
+[node name="G5" type="Label" parent="Горизонтальные штрихи"]
+margin_left = 520.0
+margin_top = 320.0
+margin_right = 620.0
+margin_bottom = 343.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "5"
+align = 1
+
+[node name="G6" type="Label" parent="Горизонтальные штрихи"]
+margin_left = 595.0
+margin_top = 260.0
+margin_right = 695.0
+margin_bottom = 283.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "6"
+align = 1
+
+[node name="G7" type="Label" parent="Горизонтальные штрихи"]
+margin_left = 670.0
+margin_top = 320.0
+margin_right = 770.0
+margin_bottom = 343.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "7"
+align = 1
+
+[node name="G8" type="Label" parent="Горизонтальные штрихи"]
+margin_left = 745.0
+margin_top = 260.0
+margin_right = 845.0
+margin_bottom = 283.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "8"
+align = 1
